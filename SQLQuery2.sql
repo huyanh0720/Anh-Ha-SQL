@@ -172,6 +172,10 @@ where R1.ClaimNumber = R2.ClaimNumber
 	select Top 1 ClaimID
 	from claim
 	order by ClaimID desc
+	
+--- Select only date
+SELECT  CAST(EntryDate AS DATE)
+from Claimant
 
 
 
